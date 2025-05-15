@@ -34,6 +34,9 @@ const AlternativeList: React.FC<AlternativeListProps> = ({ alternatives }) => {
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <span>{alt.categorie}</span>
                 <span className="font-medium">{alt.prix}€</span>
+                <div className="flex justify-between items-start">
+                <BanStatus status={alt.ban} />
+          </div>
               </div>
             </div>
           </div>
