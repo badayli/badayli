@@ -13,6 +13,12 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     <div className="bg-white rounded-lg shadow-md overflow-hidden transition-all hover:shadow-lg">
       <div className="flex flex-col sm:flex-row">
         <div className="w-full sm:w-1/3 lg:w-1/4">
+        <div className="relative w-full sm:w-1/3 lg:w-1/4">
+  {product.ban && (
+    <div className="absolute top-2 left-2 bg-red-600 text-white text-xs px-2 py-1 rounded z-10">
+      Boycott
+    </div>
+  )} </div>
           {product.photo_url ? (
             <img 
               src={product.photo_url} 
