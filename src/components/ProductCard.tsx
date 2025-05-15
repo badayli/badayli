@@ -16,7 +16,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             <img 
               src={product.photo_url} 
               alt={product.name} 
-              className="w-full h-48 sm:h-full object-cover"
+              className="w-full h-48 sm:h-full object-contain"
             />
           ) : (
             <div className="w-full h-48 sm:h-full bg-gray-200 flex items-center justify-center">
