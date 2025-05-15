@@ -3,7 +3,7 @@ import { Product } from '../types';
 import ProductCard from './ProductCard';
 
 interface ProductListProps {
-  products: Product[];
+  products: Product[] | null | undefined;
   loading: boolean;
   error: string | null;
 }
@@ -21,6 +21,15 @@ const ProductList: React.FC<ProductListProps> = ({ products, loading, error }) =
     return (
       <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-md">
         <p>{error}</p>
+      </div>
+    );
+  }
+
+  if (!Array.isArray(products)) {
+    console.warn('⚠️ products n\'est pas un tableau :', products);
+    return (
+      <div className="bg-gray-50 border border-gray-200 text-gray-700 px-4 py-8 rounded-md text-center">
+        <p>Les données produits sont invalides.</p>
       </div>
     );
   }
