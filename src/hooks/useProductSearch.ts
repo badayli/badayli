@@ -21,6 +21,8 @@ const useProductSearch = () => {
         new Set(state.products.map(product => product.categorie))
       );
       setCategories(uniqueCategories);
+    } else {
+      setCategories([]); // clear categories if no products
     }
   }, [state.products]);
 
@@ -36,7 +38,7 @@ const useProductSearch = () => {
   useEffect(() => {
     const fetchData = async () => {
       if (!debouncedSearchTerm) {
-        setState(prev => ({ ...prev, products: [], loading: false }));
+        setState(prev => ({ ...prev, products: [], loading: false, error: null }));
         return;
       }
 
@@ -44,7 +46,12 @@ const useProductSearch = () => {
 
       try {
         const data = await searchProducts(debouncedSearchTerm);
-        setState(prev => ({ ...prev, products: data, loading: false }));
+        setState(prev => ({ 
+          ...prev, 
+          products: Array.isArray(data) ? data : [], // sécurisation ici
+          loading: false,
+          error: null
+        }));
       } catch (error) {
         setState(prev => ({ 
           ...prev, 
@@ -70,12 +77,7 @@ const useProductSearch = () => {
   // Filter products by category
   const filteredProducts = state.category
     ? state.products.filter(product => product.categorie === state.category)
-    : state.products;
-
-  // Execute search immediately
-  const executeSearch = useCallback(() => {
-    setDebouncedSearchTerm(state.searchTerm);
-  }, [state.searchTerm]);
+    : state.products ?? [];
 
   return {
     searchTerm: state.searchTerm,
@@ -86,7 +88,9 @@ const useProductSearch = () => {
     categories,
     setSearchTerm,
     setCategory,
-    executeSearch
+    executeSearch: useCallback(() => {
+      setDebouncedSearchTerm(state.searchTerm);
+    }, [state.searchTerm])
   };
 };
 
