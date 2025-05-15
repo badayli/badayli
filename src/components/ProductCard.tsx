@@ -8,11 +8,11 @@ interface ProductCardProps {
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
+  if (!product) return null;
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden transition-all hover:shadow-lg">
       <div className="flex flex-col sm:flex-row">
         <div className="w-full sm:w-1/3 lg:w-1/4">
-        <BanStatus status={product.ban} />
           {product.photo_url ? (
             <img 
               src={product.photo_url} 
