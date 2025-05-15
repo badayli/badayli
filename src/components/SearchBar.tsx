@@ -53,11 +53,12 @@ const SearchBar: React.FC<SearchBarProps> = ({
             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 appearance-none bg-white"
           >
             <option value="">Toutes les catégories</option>
-            {Array.isArray(categories) && categories.map((cat) => (
+            {(Array.isArray(categories) ? categories : []).map((cat) => (
   <option key={cat} value={cat}>
     {cat}
   </option>
 ))}
+
           </select>
         </div>
         
