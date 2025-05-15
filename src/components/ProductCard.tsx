@@ -35,7 +35,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
               {product.categorie}
             </span>
-            <span className="text-lg font-medium text-gray-900">{product.prix}€</span>
+            <span className="text-lg font-medium text-gray-900">{product.prix}Dh</span>
           </div>
           
           {product.alternatives && product.alternatives.length > 0 && (
