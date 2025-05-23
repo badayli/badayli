@@ -31,7 +31,7 @@ const AlternativeList: React.FC<AlternativeListProps> = ({ alternatives }) => {
                   className="w-full h-full object-cover rounded"
                 />
               )}
-          </a> fffff  </div>
+          </a>   </div>
 
               
             <div className="min-w-0 flex-1">
