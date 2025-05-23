@@ -24,10 +24,6 @@ const AlternativeList: React.FC<AlternativeListProps> = ({ alternatives }) => {
 
   <a href={alt.photo_url} target="_blank" rel="noopener noreferrer">
    
- 
-
-
-              
               {alt.photo_url && (
                 <img 
                   src={alt.photo_url} 
@@ -35,8 +31,8 @@ const AlternativeList: React.FC<AlternativeListProps> = ({ alternatives }) => {
                   className="w-full h-full object-cover rounded"
                 />
               )}
-            </div>
- </a>
+          </a>   </div>
+
               
             <div className="min-w-0 flex-1">
               <p className="text-sm font-medium text-gray-900 truncate">{alt.name}</p>
