@@ -9,7 +9,7 @@ const BanStatus: React.FC<BanStatusProps> = ({ status }) => {
   if (status === true) {
     return <ThumbsDown className="h-5 w-5 text-red-500" />;
   } else if (status === false) {
-    return <CheckCheck className="h-5 w-5 text-green-500" />;
+    return <Check className="h-5 w-5 text-green-500" />;
   } else {
     return <Circle className="h-5 w-5 text-orange-500" />;
   }
