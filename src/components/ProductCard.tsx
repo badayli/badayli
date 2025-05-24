@@ -24,7 +24,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     <img
       src="https://badayli.com/static/media/verified.2047171bd61ad952e1f1f091f5b34cc9.svg"
       alt="Verified"
-      className="w-4 h-4"
+      title="Bien"
+      className="w-10 h-10"
     />
     <span>Non boycotté</span>
   </div>
