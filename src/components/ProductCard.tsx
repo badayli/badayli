@@ -34,7 +34,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         
         <div className="p-4 flex-1">
           <div className="flex justify-between items-start">
-            <h3 className="text-lg font-semibold text-gray-900">{product.name}</h3>
+            <h3 className="text-lg font-semibold text-gray-900">{product.article}</h3>
             <BanStatus status={product.ban} />
           </div>
           
