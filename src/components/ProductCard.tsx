@@ -19,16 +19,17 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       Boycott
     </div>
   )} 
-        {!product.ban && (
-  <div >
+       {!product.ban && (
+  <div className="absolute top-2 left-2 text-white text-xs px-2 py-1 rounded z-10 flex items-center space-x-1 bg-transparent">
     <img
       src="https://badayli.com/static/media/verified.2047171bd61ad952e1f1f091f5b34cc9.svg"
       alt="Verified"
-      className="w-40 h-40"
+      className="w-4 h-4"
     />
-    <span></span>
+    <span>Non boycotté</span>
   </div>
 )}
+
         
         
         
