@@ -35,7 +35,7 @@ const AlternativeList: React.FC<AlternativeListProps> = ({ alternatives }) => {
 
               
             <div className="min-w-0 flex-1">
-              <p className="text-sm font-medium text-gray-900 truncate">{alt.name} - {alt.marque} - - {alt.score} -</p>
+              <p className="text-sm font-medium text-orange-900 truncate">-{alt.name}-</p>
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <span>{alt.categorie}</span>
                 <span className="font-medium">{alt.prix}Dh</span>
