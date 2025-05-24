@@ -18,7 +18,22 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     <div className="absolute top-2 left-2 bg-red-600 text-white text-xs px-2 py-1 rounded z-10">
       Boycott
     </div>
-  )} </div>
+  )} 
+        {!product.ban && (
+  <div className="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded z-10 flex items-center space-x-1">
+    <img
+      src="https://badayli.com/static/media/verified.2047171bd61ad952e1f1f091f5b34cc9.svg"
+      alt="Verified"
+      className="w-4 h-4"
+    />
+    <span>Non boycotté</span>
+  </div>
+)}
+        
+        
+        
+        
+        </div>
           {product.photo_url ? (
             <img 
               src={product.photo_url} 
