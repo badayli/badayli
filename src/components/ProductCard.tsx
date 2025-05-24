@@ -19,7 +19,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       Boycott
     </div>
   )} 
-       {!product.ban && (
+       {product.ban===false && (
   <div className="absolute top-2 left-2 text-white text-xs px-2 py-1 rounded z-10 flex items-center space-x-1 bg-transparent">
     <img
       src="https://badayli.com/static/media/verified.2047171bd61ad952e1f1f091f5b34cc9.svg"
