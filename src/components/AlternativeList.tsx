@@ -21,6 +21,9 @@ const AlternativeList: React.FC<AlternativeListProps> = ({ alternatives }) => {
             className="flex items-center gap-3 p-2 bg-gray-50 rounded-md hover:bg-gray-100 transition-colors"
           >
             <div className="w-12 h-12 flex-shrink-0">
+
+  <a href={alt.photo_url} target="_blank" rel="noopener noreferrer">
+   
               {alt.photo_url && (
                 <img 
                   src={alt.photo_url} 
@@ -28,9 +31,11 @@ const AlternativeList: React.FC<AlternativeListProps> = ({ alternatives }) => {
                   className="w-full h-full object-cover rounded"
                 />
               )}
-            </div>
+          </a>   </div>
+
+              
             <div className="min-w-0 flex-1">
-              <p className="text-sm font-medium text-gray-900 truncate">{alt.name}</p>
+              <p className="text-sm font-medium text-gray-900 truncate">{alt.name}-</p>
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 <span>{alt.categorie}</span>
                 <span className="font-medium">{alt.prix}Dh</span>
