@@ -16,18 +16,23 @@ export const Header: React.FC = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <a href="/" className="text-blue-600 font-bold text-xl md:text-2xl">
-              ProSearch
+            <img 
+      src="/logo.png"  {/* Remplacez par le chemin de votre image */}
+      alt="Badayli Logo" 
+      className="h-8 w-8 mr-2"  {/* Ajustez la taille et la marge selon vos besoins */}
+    />
+              Badayli
             </a>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="/" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">
+           {/*  <a href="/" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">
               Accueil
             </a>
             <a href="/products" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">
               Produits
-            </a>
+            </a> */}
             
             <div className="relative group">
               <button 

@@ -32,17 +32,17 @@ function App() {
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
                 Trouvez le produit idéal en quelques clics
               </h1>
-              <p className="text-blue-100 text-lg mb-8">
+              {/* <p className="text-blue-100 text-lg mb-8">
                 Notre moteur de recherche avancé vous aide à trouver rapidement ce que vous cherchez.
-              </p>
-              <div className="flex flex-col sm:flex-row justify-center gap-4">
+              </p> */}
+              {/* <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <button className="bg-white text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg font-medium transition-colors duration-300 shadow-md hover:shadow-lg">
                   Commencer
                 </button>
                 <button className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-6 py-3 rounded-lg font-medium transition-colors duration-300">
                   En savoir plus
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -71,7 +71,7 @@ function App() {
         )}
 		
 		  {/* Feedback CTA */}
-        <section className="py-12 bg-gray-100">
+       {/*  <section className="py-12 bg-gray-100">
           <div className="container mx-auto px-4">
             <div className="bg-white rounded-xl shadow-md p-8 max-w-4xl mx-auto">
               <div className="flex flex-col md:flex-row items-center justify-between gap-6">
@@ -90,7 +90,7 @@ function App() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 		
 		
       </main>
