@@ -119,7 +119,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                 className={`w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors ${
                   errors.email ? 'border-red-500' : 'border-gray-300'
                 }`}
-                placeholder="votre@email.com"
+                placeholder="badayli@protonmail.com"
               />
               {errors.email && <p className="mt-1 text-sm text-red-500">{errors.email}</p>}
             </div>
