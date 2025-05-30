@@ -15,15 +15,15 @@ export const Footer: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About Section */}
-          <div className="space-y-4">
+        {/*   <div className="space-y-4">
             <h3 className="text-lg font-semibold">ProSearch</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
               Notre moteur de recherche de produits vous aide à trouver exactement ce que vous cherchez, rapidement et facilement.
             </p>
-          </div>
+          </div> */}
 
           {/* Quick Links */}
-          <div className="space-y-4">
+        {/*   <div className="space-y-4">
             <h3 className="text-lg font-semibold">Liens rapides</h3>
             <ul className="space-y-2">
               <li>
@@ -52,10 +52,10 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact Info */}
-          <div className="space-y-4">
+           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Contact</h3>
             <ul className="space-y-2">
               <li className="flex items-center text-gray-400 text-sm">
@@ -64,10 +64,10 @@ export const Footer: React.FC = () => {
               </li>
               <li className="flex items-center text-gray-400 text-sm">
                 <MessageSquare className="h-4 w-4 mr-2" />
-                <span>contact@prosearch.fr</span>
+                <span>badayli@protonmail.com</span>
               </li>
             </ul>
-          </div>
+          </div> 
 
           {/* Social Media */}
           <div className="space-y-4">
