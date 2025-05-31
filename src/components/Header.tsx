@@ -12,12 +12,12 @@ export const Header: React.FC = () => {
   
   return (
     <header className="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
-      <div className="container mx-auto px-4 py-3 md:py-4">
-        <div className="flex justify-between items-center">
-          <div className="flex items-center">
+  <div className="container mx-auto px-4 py-2 md:py-2.5">
+    <div className="flex justify-between items-center">
+      <div className="flex items-center">
             <a href="/" className="text-blue-600 font-bold text-xl md:text-2xl">
             <img 
-      src="./logo.png"  /* Remplacez par le chemin de votre image */
+      src="../logo.png"  /* Remplacez par le chemin de votre image */
       alt="Badayli Logo" 
       className="h-8 w-8 mr-2"  /* Ajustez la taille et la marge selon vos besoins */
     />
