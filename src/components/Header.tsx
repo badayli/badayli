@@ -19,9 +19,9 @@ export const Header: React.FC = () => {
             <img 
       src="../logo.png"  /* Remplacez par le chemin de votre image */
       alt="Badayli Logo" 
-      className="h-8 w-8 mr-2"  /* Ajustez la taille et la marge selon vos besoins */
+      className="h-16 w-16 mr-2"  /* Ajustez la taille et la marge selon vos besoins */
     />
-              Badayli
+              {/* Badayli */}
             </a>
           </div>
 
@@ -39,18 +39,18 @@ export const Header: React.FC = () => {
                 className="flex items-center text-gray-700 hover:text-blue-600 transition-colors duration-200"
                 onClick={() => setIsContactModalOpen(true)}
               >
-                <span>Contact</span>
+                <span>Contact/Contribuer</span>
                 <ChevronDown className="ml-1 h-4 w-4" />
               </button>
             </div>
             
-            <button 
+            {/* <button 
               onClick={() => setIsFeedbackModalOpen(true)}
               className="flex items-center text-gray-700 hover:text-blue-600 transition-colors duration-200"
             >
               <MessageSquare className="mr-1 h-4 w-4" />
               <span>Feedback</span>
-            </button>
+            </button> */}
           </nav>
 
           {/* Mobile menu button */}
