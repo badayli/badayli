@@ -20,12 +20,8 @@ export const Header: React.FC = () => {
     <div className="flex justify-between items-center">
       <div className="flex items-center">
             {/* <a href="/" className="text-blue-600 font-bold text-xl md:text-2xl"> */}
-            <img 
-      src="../logo.png"  /* Remplacez par le chemin de votre image */
-      alt="Badayli Logo" 
-      className="h-16 w-16 mr-2"  /* Ajustez la taille et la marge selon vos besoins */
-    />
-               Badayli 
+           
+                
             {/* </a> */}
           </div>
 
@@ -67,15 +63,7 @@ export const Header: React.FC = () => {
               >
                 <Instagram size={18} />
               </a>
-              <a 
-                href="https://linkedin.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-gray-800 text-blue-400 hover:bg-blue-700 hover:text-white p-2 rounded-full transition-all duration-300 transform hover:scale-110"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={18} />
-              </a>
+              
               <a 
                 href="https://youtube.com" 
                 target="_blank" 

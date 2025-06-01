@@ -100,15 +100,7 @@ export const Footer: React.FC = () => {
               >
                 <Instagram size={18} />
               </a>
-              <a 
-                href="https://linkedin.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-gray-800 text-blue-400 hover:bg-blue-700 hover:text-white p-2 rounded-full transition-all duration-300 transform hover:scale-110"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={18} />
-              </a>
+             
               <a 
                 href="https://youtube.com" 
                 target="_blank" 
