@@ -25,12 +25,12 @@ export const Header: React.FC = () => {
       alt="Badayli Logo" 
       className="h-16 w-16 mr-2"  /* Ajustez la taille et la marge selon vos besoins */
     />
-              {/* Badayli */}
+               Badayli 
             {/* </a> */}
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6">
+         
            {/*  <a href="/" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">
               Accueil
             </a>
@@ -38,7 +38,7 @@ export const Header: React.FC = () => {
               Produits
             </a> */}
              <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Suivez-nous</h3>
+           
             <div className="flex space-x-4">
               <a 
                 href="https://facebook.com" 
@@ -86,10 +86,9 @@ export const Header: React.FC = () => {
                 <Youtube size={18} />
               </a>
             </div>
-            <p className="text-xs text-gray-500 mt-4">
-              Suivez-nous sur les réseaux sociaux pour les dernières nouvelles et mises à jour.
-            </p>
+            
           </div>
+           <nav className="hidden md:flex items-center space-x-6">
             <div className="relative group">
               <button 
                 className="flex items-center text-gray-700 hover:text-blue-600 transition-colors duration-200"
