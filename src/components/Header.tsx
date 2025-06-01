@@ -82,7 +82,7 @@ export const Header: React.FC = () => {
                 className="flex items-center text-gray-700 hover:text-blue-600 transition-colors duration-200"
                 onClick={() => setIsContactModalOpen(true)}
               >
-                <span>Contact/Contribuer</span>
+                <span>Contribuer</span>
                 <ChevronDown className="ml-1 h-4 w-4" />
               </button>
             </div>
@@ -121,21 +121,10 @@ export const Header: React.FC = () => {
                   }}
                 >
                   <Phone className="mr-2 h-4 w-4" />
-                  <span>Contact</span>
+                  <span>Contribuer</span>
                 </button>
               </li>
-              <li>
-                <button 
-                  className="flex items-center w-full py-2 text-gray-700 hover:text-blue-600 transition-colors duration-200"
-                  onClick={() => {
-                    setIsFeedbackModalOpen(true);
-                    setIsMenuOpen(false);
-                  }}
-                >
-                  <MessageSquare className="mr-2 h-4 w-4" />
-                  <span>Feedback</span>
-                </button>
-              </li>
+             
             </ul>
           </nav>
         )}
