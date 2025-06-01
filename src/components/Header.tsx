@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
-import { Menu, X, MessageSquare, Phone, ChevronDown } from 'lucide-react';
+import { Menu, X, MessageSquare, Phone, ChevronDown,  Facebook,  Twitter, 
+  Instagram, 
+  Linkedin, 
+  Youtube,   
+   } from 'lucide-react';
 import { ContactModal } from './ContactModal';
 import { FeedbackModal } from './FeedbackModal';
 
@@ -15,14 +19,14 @@ export const Header: React.FC = () => {
   <div className="container mx-auto px-4 py-2 md:py-2.5">
     <div className="flex justify-between items-center">
       <div className="flex items-center">
-            <a href="/" className="text-blue-600 font-bold text-xl md:text-2xl">
+            {/* <a href="/" className="text-blue-600 font-bold text-xl md:text-2xl"> */}
             <img 
       src="../logo.png"  /* Remplacez par le chemin de votre image */
       alt="Badayli Logo" 
       className="h-16 w-16 mr-2"  /* Ajustez la taille et la marge selon vos besoins */
     />
               {/* Badayli */}
-            </a>
+            {/* </a> */}
           </div>
 
           {/* Desktop Navigation */}
@@ -33,7 +37,59 @@ export const Header: React.FC = () => {
             <a href="/products" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">
               Produits
             </a> */}
-            
+             <div className="space-y-4">
+            <h3 className="text-lg font-semibold">Suivez-nous</h3>
+            <div className="flex space-x-4">
+              <a 
+                href="https://facebook.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-gray-800 text-blue-400 hover:bg-blue-600 hover:text-white p-2 rounded-full transition-all duration-300 transform hover:scale-110"
+                aria-label="Facebook"
+              >
+                <Facebook size={18} />
+              </a>
+              <a 
+                href="https://twitter.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-gray-800 text-blue-400 hover:bg-blue-500 hover:text-white p-2 rounded-full transition-all duration-300 transform hover:scale-110"
+                aria-label="Twitter"
+              >
+                <Twitter size={18} />
+              </a>
+              <a 
+                href="https://instagram.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-gray-800 text-pink-400 hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 hover:text-white p-2 rounded-full transition-all duration-300 transform hover:scale-110"
+                aria-label="Instagram"
+              >
+                <Instagram size={18} />
+              </a>
+              <a 
+                href="https://linkedin.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-gray-800 text-blue-400 hover:bg-blue-700 hover:text-white p-2 rounded-full transition-all duration-300 transform hover:scale-110"
+                aria-label="LinkedIn"
+              >
+                <Linkedin size={18} />
+              </a>
+              <a 
+                href="https://youtube.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-gray-800 text-red-400 hover:bg-red-600 hover:text-white p-2 rounded-full transition-all duration-300 transform hover:scale-110"
+                aria-label="YouTube"
+              >
+                <Youtube size={18} />
+              </a>
+            </div>
+            <p className="text-xs text-gray-500 mt-4">
+              Suivez-nous sur les réseaux sociaux pour les dernières nouvelles et mises à jour.
+            </p>
+          </div>
             <div className="relative group">
               <button 
                 className="flex items-center text-gray-700 hover:text-blue-600 transition-colors duration-200"
