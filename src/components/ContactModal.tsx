@@ -38,11 +38,12 @@ export const ContributionModal: React.FC<ContributionModalProps> = ({ isOpen, on
     const urlRegex = /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([/\w .-]*)*\/?$/;
     
     if (!formData.productName.trim()) newErrors.productName = 'Le nom du produit est requis';
-    if (!formData.altName.trim()) newErrors.altName = 'Le nom alternatif est requis';
-    if (!formData.altDesc.trim()) newErrors.altDesc = 'La description est requise';
+    //if (!formData.altName.trim()) newErrors.altName = 'Le nom alternatif est requis';
+    //if (!formData.altDesc.trim()) newErrors.altDesc = 'La description est requise';
     
     if (!formData.rating) {
-      newErrors.rating = 'La note est requise';
+      formData.rating='1';
+      //newErrors.rating = 'La note est requise';
     } else {
       const ratingNum = Number(formData.rating);
       if (isNaN(ratingNum)) {
@@ -52,11 +53,11 @@ export const ContributionModal: React.FC<ContributionModalProps> = ({ isOpen, on
       }
     }
     
-    if (!formData.altImage.trim()) {
+    /* if (!formData.altImage.trim()) {
       newErrors.altImage = "L'URL de l'image est requise";
     } else if (!urlRegex.test(formData.altImage)) {
       newErrors.altImage = 'URL invalide';
-    }
+    } */
     
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -153,7 +154,7 @@ export const ContributionModal: React.FC<ContributionModalProps> = ({ isOpen, on
             
             <div>
               <label htmlFor="altName" className="block text-sm font-medium text-gray-700 mb-1">
-                Nom alternatif*
+                Nom alternatif(Facultatif)
               </label>
               <input
                 type="text"
@@ -171,7 +172,7 @@ export const ContributionModal: React.FC<ContributionModalProps> = ({ isOpen, on
             
             <div>
               <label htmlFor="altDesc" className="block text-sm font-medium text-gray-700 mb-1">
-                Description alternative*
+                Description alternative (Facultatif)
               </label>
               <textarea
                 id="altDesc"
@@ -187,7 +188,7 @@ export const ContributionModal: React.FC<ContributionModalProps> = ({ isOpen, on
               {errors.altDesc && <p className="mt-1 text-sm text-red-500">{errors.altDesc}</p>}
             </div>
             
-            <div>
+           {/*  <div>
               <label htmlFor="rating" className="block text-sm font-medium text-gray-700 mb-1">
                 Note (1-5)*
               </label>
@@ -205,11 +206,11 @@ export const ContributionModal: React.FC<ContributionModalProps> = ({ isOpen, on
                 placeholder="Note entre 1 et 5"
               />
               {errors.rating && <p className="mt-1 text-sm text-red-500">{errors.rating}</p>}
-            </div>
+            </div> */}
             
             <div>
               <label htmlFor="altImage" className="block text-sm font-medium text-gray-700 mb-1">
-                URL de l'image alternative*
+                URL de l'image alternative (Facultatif)
               </label>
               <input
                 type="url"
