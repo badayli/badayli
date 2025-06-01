@@ -70,7 +70,7 @@ export const ContributionModal: React.FC<ContributionModalProps> = ({ isOpen, on
     setIsLoading(true);
     
     try {
-      const response = await fetch('https://mon-api-three.vercel.app/api/products/api/contribute', {
+      const response = await fetch('https://mon-api-three.vercel.app/api/products/contribute', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
