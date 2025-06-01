@@ -4,7 +4,7 @@ import { Menu, X, MessageSquare, Phone, ChevronDown,  Facebook,  Twitter,
   Linkedin, 
   Youtube,   
    } from 'lucide-react';
-import { ContactModal } from './ContactModal';
+import { ContributionModal  } from './ContactModal';
 import { FeedbackModal } from './FeedbackModal';
 
 export const Header: React.FC = () => {
@@ -131,7 +131,7 @@ export const Header: React.FC = () => {
       </div>
 
       {/* Modals */}
-      <ContactModal isOpen={isContactModalOpen} onClose={() => setIsContactModalOpen(false)} />
+      <ContributionModal  isOpen={isContactModalOpen} onClose={() => setIsContactModalOpen(false)} />
       <FeedbackModal isOpen={isFeedbackModalOpen} onClose={() => setIsFeedbackModalOpen(false)} />
     </header>
   );
