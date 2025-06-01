@@ -6,7 +6,6 @@ import {
   Linkedin, 
   Youtube, 
   MessageSquare,
-  Whatsapp, 
   Phone
 } from 'lucide-react';
 
