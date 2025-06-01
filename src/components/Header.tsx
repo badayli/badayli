@@ -110,24 +110,8 @@ export const Header: React.FC = () => {
         {isMenuOpen && (
           <nav className="md:hidden mt-4 pb-2 pt-2 border-t border-gray-100 animate-fadeIn">
             <ul className="space-y-3">
-              <li>
-                <a 
-                  href="/" 
-                  className="block py-2 text-gray-700 hover:text-blue-600 transition-colors duration-200"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Accueil
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="/products" 
-                  className="block py-2 text-gray-700 hover:text-blue-600 transition-colors duration-200"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Produits
-                </a>
-              </li>
+              
+             
               <li>
                 <button 
                   className="flex items-center w-full py-2 text-gray-700 hover:text-blue-600 transition-colors duration-200"
